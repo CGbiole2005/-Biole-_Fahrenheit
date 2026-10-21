@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main() {
+    int day_num;
+
+    // Prompt user for a number between 1 and 7
+    printf("Enter a number (1-7): ");
+    scanf("%d", &day_num);
+
+    // Map the number to the corresponding day using switch
+    switch (day_num) {
+        case 1:
+            printf("Day 1 is Monday\n");
+            break;
+        case 2:
+            printf("Day 2 is Tuesday\n");
+            break;
+        case 3:
+            printf("Day 3 is Wednesday\n");
+            break;
+        case 4:
+            printf("Day 4 is Thursday\n");
+            break;
+        case 5:
+            printf("Day 5 is Friday\n");
+            break;
+        case 6:
+            printf("Day 6 is Saturday\n");
+            break;
+        case 7:
+            printf("Day 7 is Sunday\n");
+            break;
+        default:
+            // Handle any inputs outside of the 1-7 range
+            printf("Error: Invalid day number. Please enter a value from 1 to 7.\n");
+            break;
+    }
+
+    return 0;
+}
