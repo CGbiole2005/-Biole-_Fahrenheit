@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    double weight, height, bmi;
+
+    // Prompt user for weight (in kilograms) and height (in meters)
+    printf("Enter weight (kg): ");
+    scanf("%lf", &weight);
+
+    printf("Enter height (m): ");
+    scanf("%lf", &height);
+
+    // Calculate BMI: weight / (height * height)
+    bmi = weight / (height * height);
+
+    // Print calculated BMI formatted to two decimal places
+    printf("\nBMI: %.2f\n", bmi);
+
+    // Categorize BMI using an if-else-if ladder
+    if (bmi < 18.5) {
+        printf("Category: Underweight\n");
+    } else if (bmi <= 24.9) {
+        printf("Category: Normal\n");
+    } else if (bmi <= 29.9) {
+        printf("Category: Overweight\n");
+    } else {
+        printf("Category: Obese\n");
+    }
+
+    return 0;
+}
